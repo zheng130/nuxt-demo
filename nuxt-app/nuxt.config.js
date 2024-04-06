@@ -27,7 +27,13 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
   ],
-
+  // 配置服务器（主要是这个配置）
+  server: {
+    // port: 8000, // default: 3000
+    host: '0.0.0.0', // default: localhost (推荐)
+    // host: '0', // 等于 host: '0.0.0.0' 这样配置，在mac上这么配置没问题，但是在window上这么配置有报错。
+    timing: false
+  },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
