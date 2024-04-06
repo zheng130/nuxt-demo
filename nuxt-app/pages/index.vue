@@ -1,5 +1,9 @@
 <template>
-  <Tutorial/>
+
+  <div>
+    <Tutorial/>
+    <nuxt-link to="/home">home</nuxt-link>
+  </div>
 </template>
 
 <script>
